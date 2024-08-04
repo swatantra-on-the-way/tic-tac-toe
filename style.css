@@ -1,0 +1,45 @@
+:root{
+    --border: 1px solid black;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell{
+    border: none;
+    background: burlywood;
+    font-size: 20px;
+    color: black;
+}
+
+.cell:nth-child(3n+1), .cell:nth-child(3n+2){
+    border-right: var(--border);
+}
+
+.cell:nth-child(n+4){
+    border-top: var(--border);
+}
+
+.result{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
