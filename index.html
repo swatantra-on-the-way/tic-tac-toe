@@ -8,13 +8,35 @@
     <script src = "js-file.js" defer></script>
 </head>
 <body>
+    <p id = "game-title">Tic-Tac-Toe</p>
+    <form id="intro-screen">
+        <h2>Enter &nbsp;Names  </h2>
+        <div class = "names">
+            <div class = "player">
+                <label for="'player1-name">Player1: </label>
+                <input type="text" id = "player1-name" name = "player1-name">
+            </div>
+            <div class = "player">
+                <label for="player2-name">Player2: </label>
+                <input type="text" id = "player2-name" name = "player2-name">
+            </div>
+        </div>
+        <div class = "button">
+            <input type = "submit" value = "Start Game">
+        </div>
+    </form>
     <div class="container">
         <h2 class="turn"></h2>
         <div class="board"></div>
         <div class="result">
-            <p class="game-over-status"></p>
-            <p class="final-msg"></p>
+            <p></p>
+            <p></p>
+            <button id = "play-again">Play Again</button>
         </div>
     </div>
+    <p class = "footer">
+        Designed by <a href = "https://github.com/swatantra-on-the-way" target = "_blank">leoSwatantra</a>
+    </p>
+
 </body>
 </html>
